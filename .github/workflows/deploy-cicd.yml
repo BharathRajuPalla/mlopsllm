@@ -10,7 +10,7 @@ on:
         default: mlopsllm
 
 env:
-  DATABRICKS_HOST: https://adb-4496471258703562.2.azuredatabricks.net
+  DATABRICKS_HOST: https://adb-7135541228906330.10.azuredatabricks.net
   ARM_TENANT_ID: ${{ secrets.STAGING_AZURE_SP_TENANT_ID }}
   ARM_CLIENT_ID: ${{ secrets.STAGING_AZURE_SP_APPLICATION_ID }}
   ARM_CLIENT_SECRET: ${{ secrets.STAGING_AZURE_SP_CLIENT_SECRET }}
@@ -50,7 +50,7 @@ jobs:
       - name: Update databricks.yml
         id: update
         run: |
-          echo -e "  staging:\n    workspace:\n      host: https://adb-4496471258703562.2.azuredatabricks.net\n\n  prod:\n    workspace:\n      host: https://adb-4496471258703562.2.azuredatabricks.net\n\n  test:\n    workspace:\n      host: https://adb-4496471258703562.2.azuredatabricks.net" >> "$PROJECT_NAME_ALPHA/databricks.yml"
+          echo -e "  staging:\n    workspace:\n      host: https://adb-7135541228906330.10.azuredatabricks.net\n\n  prod:\n    workspace:\n      host: https://adb-7135541228906330.10.azuredatabricks.net\n\n  test:\n    workspace:\n      host: https://adb-7135541228906330.10.azuredatabricks.net" >> "$PROJECT_NAME_ALPHA/databricks.yml"
       - name: Initialize Bundle
         id: initialize
         run: |
