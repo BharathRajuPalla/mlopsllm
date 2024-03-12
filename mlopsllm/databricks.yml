@@ -36,5 +36,5 @@ targets:
 
   test:
     workspace:
-      host: https://adb-5565834108644774.14.azuredatabricks.net
+      host: https://adb-4496471258703562.2.azuredatabricks.net
 
